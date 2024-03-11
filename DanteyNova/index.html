@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="style.css">
+        <title>Dante y Nova Café</title>
+        <script src="script.js"></script>
+        <script>
+            function responsive(){
+                let width = window.innerWidth;
+                if(width<767){
+                    document.getElementById("response1").style.display="block";
+                    document.getElementById("responsive1").style.display="none";
+                    document.getElementById("response2").style.display="block";
+                    document.getElementById("responsive2").style.display="none";
+                    document.getElementById("response3").style.display="block";
+                    document.getElementById("responsive3").style.display="none";
+                }
+                if(width>=767){
+                    document.getElementById("response1").style.display="none";
+                    document.getElementById("responsive1").style.display="block";
+                    document.getElementById("response2").style.display="none";
+                    document.getElementById("responsive2").style.display="block";
+                    document.getElementById("response3").style.display="none";
+                    document.getElementById("responsive3").style.display="block";
+                    document.getElementById("sidebarmenudiv").style.display="none";
+                }
+            }
+            function sidebar(){
+                document.getElementById("sidebarmenudiv").style.display="block";
+            }
+            
+            window.addEventListener("resize",responsive);
+        </script>
+    </header>
+    <body onload="responsive()">
+        <div>
+        <div width="100%" class="navbar">    
+            <table align="center" width="100%" id="responsive3">
+                <tr>
+                    <td width="20%">
+                        <a><p>Ubicación</p></a>
+                    </td>
+                    <td width="20%">
+                        <a><p>Conócenos</p></a>
+                    </td>
+                    <td width="20%">
+                        <center>
+                            <img style="position: relative;" class="icon" src="images/logo.jpg">
+                        </center>
+                    </td>
+                    <td width="20%">
+                        <a><p>Ordenar</p></a>
+                    </td>
+                    <td width="20%">
+                        <a><p>Menú</p></a>
+                    </td>
+                </tr>
+            </table>
+            <div width="100%" id="response3" style=" padding: 5%;">
+                <a><img onclick="sidebar()" style="position:absolute" src="images/menuicon.png" width="7%"> </a>
+                <div>
+                <center>
+                <img class="resicon" src="images/logo.jpg">
+                </center>
+                </div>
+            </div>
+        </div>
+        <div id="sidebarmenudiv">
+            <table id="sidebarmenu">
+                <tr>
+                    <a><p>Ubicación</p></a>
+                </tr>
+                <tr>
+                    <a><p>Conócenos</p></a>
+                </tr>
+                <tr>
+                    <a><p>Ordenar</p></a>
+                </tr>
+                <tr>
+                    <a><p>Menú</p></a>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <div class="infodiv1">
+            <table width="100%">
+                <tr>
+                    <td width=60% style="padding: 5%;">
+                        <p class="txt">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse tempor lacus nisi, quis aliquet turpis euismod in. Sed nec vestibulum ipsum, faucibus mollis sapien. Vestibulum non ex id felis facilisis interdum. Nullam lacinia varius lacus nec cursus.</p>
+                    </td>
+                    <td id="responsive1"  >
+                        <img class="displayimgs" id="responsive1" src="images/humanfriendly.png" width=100% >
+                    </td>
+                </tr>
+            </table>
+            <Center>
+            <img class="resdisplayimgs" id="response1" src="images/humanfriendly.png" width=100% >
+            </Center>
+        </div>
+        <div class="imgdiv">
+            <p>Visitanos!</p>
+            <center>
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                    <center>
+                    <div>
+                        <img class="slider1 fade" style="display: block;" src="images/nova2.jpg">
+                        <img class="slider1 fade" src="images/drinks.jpg">
+                        <img class="slider1 fade" src="images/place2.jpg">
+                        <img class="slider1 fade" src="images/nova.jpg">
+                        <img class="slider1 fade" src="images/drinks2.jpg">
+                    </div>
+                    </center>
+                    </td>
+                    <td width="40%">
+                    <center>
+                    <div>
+                        <img class="slider fade" style="display: block;" src="images/drinks.jpg">
+                        <img class="slider fade" src="images/place2.jpg">
+                        <img class="slider fade" src="images/nova.jpg">
+                        <img class="slider fade" src="images/drinks2.jpg">
+                        <img class="slider fade" src="images/nova2.jpg">
+                    </div>
+                    </center>
+                    </td>
+                    <td width="30%">
+                    <center>
+                    <div>
+                        <img class="slider2 fade" style="display: block;" src="images/place2.jpg">
+                        <img class="slider2 fade" src="images/nova.jpg">
+                        <img class="slider2 fade" src="images/drinks2.jpg">
+                        <img class="slider2 fade" src="images/nova2.jpg">
+                        <img class="slider2 fade" src="images/drinks.jpg">
+                    </div>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <div class="infodiv2">
+            <center>
+            <img class="resdisplayimgs" id="response2" src="images/inside.jpg" width=100% ></img>
+            </center>
+            <table width="100%">
+                <tr>
+                    <td id="responsive2">
+                        <center>
+                        <img class="displayimgs" id="responsive2" src="images/inside.jpg" width=100% ></img>
+                        </center>
+                    </td>
+                    <td width=60% style="padding: 5%;">
+                        <p align="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                            optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </body>
+</html>
